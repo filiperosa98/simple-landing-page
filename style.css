@@ -1,0 +1,108 @@
+body {
+    font-family: Overpass;
+    color: #404042;
+    font-size: 18px;
+    margin: 0px;
+}
+
+h1, h2, h3 {
+    font-family: Chivo;
+    text-align: center;
+}
+
+a {
+    color: #1A48E3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.container{
+   text-align: center; /*centar elementos dentro da div*/
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.banner {
+    padding: 150px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/flor2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.card-white {
+    padding: 15px;
+    border-radius: 4px;
+    margin: 5px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 2px 2px 20px rgb(184, 184, 184);
+}
+
+.card-white img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cards {
+    display: inline-flex;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.button-blue {
+    background-color: tomato;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 25px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.button-blue:hover {
+    color: black;
+    background-color: white;
+}
+
+.footer {
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+}
+
+
+@media (max-width: 800px) {
+    .cards {
+      display: block;
+      width: auto;  /*para o ecrã nao passar para além da largura que foi definida de 800px*/
+    }
+    .card-white {
+        margin: 15px;
+    }
+}
+
+@media (min-width: 500px) {
+    .container {
+      width: 250px;
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .container {
+      width: 930px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 950px;
+    }
+  }
